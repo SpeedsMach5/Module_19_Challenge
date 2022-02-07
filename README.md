@@ -1,3 +1,3 @@
 # Module_19_Challenge
-Crypto Wallet
+FinTech Finder
 Helps you find FinTech professionals for your project
