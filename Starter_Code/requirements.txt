@@ -2,3 +2,7 @@ streamlit
 dataclasses
 Web3
 typing
+dotenv
+os
+requests
+bip44
