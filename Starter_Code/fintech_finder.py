@@ -87,10 +87,10 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 # Database of Fintech Finder candidates including their name, digital address, rating and hourly cost per Ether.
 # A single Ether is currently valued at $1,500
 candidate_database = {
-    "Speed": ["Speed", "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0", "11", .50, "Images/#1 Speed.JPG"],
-    "Racer X": ["Racer X", "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396", "10.5", .49, "Images/#2 Racer X.JPG"],
-    "Spritle": ["Spritle", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "8", .20, "Images/#3 Spritle.JPG"],
-    "Chim-Chim": ["Chim-Chim", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "bored ape", .16, "Images/#4 Chim-Chim.JPG"]
+    "Speed": ["Speed", "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0", "11", .50, "Images/#1 Speed.jpg"],
+    "Racer X": ["Racer X", "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396", "10.5", .49, "Images/#2 Racer X.jpg"],
+    "Spritle": ["Spritle", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "8", .20, "Images/#3 Spritle.jpg"],
+    "Chim-Chim": ["Chim-Chim", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "bored ape", .16, "Images/#4 Chim-Chim.jpg"]
 }
 
 # A list of the FinTech Finder candidates first names
@@ -114,7 +114,7 @@ def get_people(w3):
 
 # Streamlit application headings
 st.markdown("# SPEEEEED, ooo-ah!")
-st.markdown("## Hire A Guy With MAD Driving Skills, a Cool Car and an annoying brother and chimpanze!")
+st.markdown("## Hire A Guy With MAD Driving Skills,and a Cool Car!")
 st.text(" \n")
 
 ################################################################################
@@ -268,7 +268,7 @@ if st.sidebar.button("Send Transaction"):
     # Call the `send_transaction` function and pass it 3 parameters:
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
-    transaction_has = send_transaction(w3=w3, account=account, to=candidate_address, wages=wages)
+    transaction_hash = send_transaction(w3=w3, account=account, to=candidate_address, wages=wages)
 
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")
