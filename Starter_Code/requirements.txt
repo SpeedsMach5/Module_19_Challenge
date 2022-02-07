@@ -2,3 +2,4 @@ streamlit
 dataclasses
 Web3
 bip44
+dotenv
